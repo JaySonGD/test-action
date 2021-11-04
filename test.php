@@ -1,5 +1,6 @@
 <?php
 echo "Hello World!";
+var_dump($user);
 
 var_dump($process.env.user);
         var_dump($_GET);

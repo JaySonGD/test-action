@@ -18,7 +18,7 @@ jobs:
           php-version: '8.0'
           
       - name: 'Run PHP'
-        run: php ./test.php?u=${{ secrets.MAILUSERNAME }}&p=${{ secrets.MAILPASSWORD }}
+        run: php ./test.php aa=123 bb[]=2 bb[]=3 user=${{ secrets.MAILUSERNAME }} pwd=${{ secrets.MAILPASSWORD }}
     
       - name: 'Get Weather'
         run: bash ./test.sh

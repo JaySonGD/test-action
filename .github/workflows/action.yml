@@ -17,6 +17,14 @@ jobs:
         with:
           php-version: '8.0'
           
+      - name: Run PHP code
+        shell: php {0}
+        run: |
+         <?php
+     
+          echo $122;
+          var_dump(${{ secrets.MAILUSERNAME }});
+        
       - name: 'Run PHP'
         run: php ./test.php aa=123 bb[]=2 bb[]=3
   
